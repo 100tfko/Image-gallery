@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Unsplash Image Gallery</h1>
+    <input type="text" id="searchInput" placeholder="Search for images...">
+    <button id="searchButton">Search</button>
+
+    <!-- Add the OAuth Login Button -->
+    <a href="https://unsplash.com/oauth/authorize?client_id=vqdMF6fk3jX-txNLyty7qiFplOy-J562J58Y5WYmfa8&redirect_uri=http://localhost:3000/callback&response_type=code&scope=public+write_photos">
+      <button id="loginButton">Login with Unsplash</button>
+    </a>
+  </header>
+
+  <main>
+    <section id="gallery">
+      <!-- Images will be inserted here via JavaScript -->
+    </section>
+  </main>
+
+  <footer>
+    <p>Powered by Unsplash API</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

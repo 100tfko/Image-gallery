@@ -1,0 +1,32 @@
+/* Basic reset */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+
+/* Hide search button and gallery initially */
+#searchButton, #gallery {
+  display: none; /* Hide initially */
+}
+
+  #gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  #gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
